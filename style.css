@@ -16,6 +16,13 @@ body{
 
 
 }
+/* ----------------------------------- */
+.bigdiv{
+    background-image: url("/WebDevlopment/DCSFrontendTask/Resources/hero_bg.png");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .header{
     
@@ -26,6 +33,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 
     background-color: rgba(255,255,255,25%);  
 
@@ -47,6 +55,7 @@ body{
     color: #ffffff;
 
     font-weight: lighter;
+    font-size: medium;
 
     transition: all;
     transition: .5s;
@@ -57,21 +66,14 @@ body{
     text-decoration-color: #FA8B02;
 }
 
-.bg {
-    position: absolute;
-    width:100%;
-    top:0px;
-    z-index: -10;
-}
-
-.LanLogSin{
-    font-size: 10px;
+.language-login-signup{
+    font-size: 15px;
 }
 
 #lan{
     background-color: transparent;
     border: 0px solid transparent;
-    color: rgb(209, 209, 209);
+    color: #EFEFEF;
 
     margin-right: 10px;
 }
@@ -105,5 +107,80 @@ body{
 }
 
 #signup:hover{
-    background-color: #fa8b00;
+    background-color:transparent;
+    color: #000000;
+}
+/* ------------------------------------------------- */
+.booking {
+    width:100%;
+    height : 300px ;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.quote1{
+    font-size: 40px;
+    color: #ffffff ;
+
+}
+.quote2{
+    font-size: larger;
+    color: #ffffff;
+}
+
+/* ------------------------------------------------ */
+.popular-destinations{
+    width:100%;
+    box-sizing: border-box;
+}
+.popular-destinations-title{
+
+    font-size: 20px;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.btn{
+    border: 0px solid transparent;
+    border-radius: 100%;
+
+    background-color:  #EFEFEF;
+    color: #b5b5b5;
+
+    font-size: 20px;
+    
+    transition: all;
+    transition-duration: .5s;
+
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn:hover{
+    background-color: #FA8B02;
+    color:#ffffff;
+}
+.popular-destination-pics{
+
+    display: inline-flex;
+    justify-content: space-evenly;
+
+    align-items: center;
+    
+    
+}
+
+.destination{
+    transform: scale(.75);
+}
+
+.day-align, .euros{
+    color:#FA8B02;
+    display: inline-flex;
 }

@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tours to Tuscany</title>
+    <!--Main Stylesheet-->
     <link rel = "stylesheet" href = "style.css">
+
+    <!--Used for Copying Icons-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/thinline.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
+
+
 </head>
 <body>
+
+
+<div class="bigdiv">
 
     <!--Header Bar-->
     <header class="header">
@@ -25,7 +36,7 @@
         </div>
 
         <!--Lanuage, Login, Signup-->
-        <div class="LanLogSin">
+        <div class="language-login-signup">
 
             <!--Language-->
             <select name="lan" id="lan">
@@ -43,11 +54,104 @@
         </div>
 
     </header>
-
-    <!-- Top Background Image -->
-    <img src = "/WebDevlopment/DCSFrontendTask/Resources/hero_bg.png" class = "bg" alt = "just a Background">
-
     
+    <!--Booking-->
+    <div class="booking">
+        
+        <p class = "quote1">Enjoy in the best way!</p>
+        <p class = "quote2">Enjoy our services for your trip anytime</p>
+        <div class="traveldetails"></div>
+    </div>
+
+</div>
+
+<br>
+
+    <!--Popular Destinations-->
+    <div class="popular-destinations">
+
+        <div class = "popular-destinations-title">
+
+            <p>Explore Our Popular Destinations</p>
+
+            <!--Left-Right Buttons-->
+            <div>
+                <button class = "btn">&lt</button>
+                <button class = "btn">&gt</button>
+            </div>
+        </div>
+
+        <div class = "popular-destination-pics">
+
+            <div class="destination">
+
+                <a href = "#" class = "popular-destination-pics"> <img src = "Resources/popular_dest_1.svg"> </a>
+                <h3>Lucca Bike Tour</h3>
+                
+                <p>from <b class = "euros">34 €</b></p>
+
+                <div class = "day-align">
+                    <i class="uil uil-calendar-alt"></i>
+                    <pre> EVERYDAY                             </pre>
+                    <i class="uil uil-users-alt"></i>
+                    <pre> 3-10 PP</pre>
+                </div>    
+                
+            </div>
+
+            <div class="destination">
+
+                <a href = "#" class = "popular-destination-pics"> <img src = "Resources/popular_dest_2.svg"> </a>
+                <h3>Wine tasting in Tuscany</h3>
+
+                <p>from <b class = "euros">34 €</b></p>
+
+                <div class = "day-align">
+                    <i class="uil uil-calendar-alt"></i>
+                    <pre> MONDAY                             </pre>
+                    <i class="uil uil-users-alt"></i>
+                    <pre> 10-30 PP</pre>               
+                </div>
+
+            </div>
+
+            <div class="destination">
+
+                <a href = "#" class = "popular-destination-pics"> <img src = "Resources/popular_dest_3.svg"> </a>
+                <h3>Cinque Terre Tour</h3>
+
+                <p>from <b class = "euros">34 €</b></p>
+
+                <div class = "day-align">
+                    <i class="uil uil-calendar-alt"></i>
+                    <pre > TO BE DECIEDED                </pre>
+                    <i class="uil uil-users-alt"></i>
+                    <pre> 10-50 PP</pre>
+                </div>    
+
+            </div>
+
+            <div class="destination">
+
+                <a href = "#" class = "popular-destination-pics"> <img src = "Resources/popular_dest_4.svg"> </a>
+                <h3>Siena and Surroundings</h3>
+
+                <p>from <b class = "euros">34 €</b></p>
+
+                <div class = "day-align">
+                    
+                    <i class="uil uil-calendar-alt"></i>
+                    <pre> TO BE DECIEDED                </pre>
+                    <i class="uil uil-users-alt"></i>
+                    <pre> 5-10 PP</pre>
+                    
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
 
 </body>
 </html>
