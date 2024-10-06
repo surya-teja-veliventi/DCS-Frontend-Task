@@ -322,3 +322,50 @@ body{
     top: -90px;
     width: 65%;
 }
+
+/* --------------------------------------------------------- */
+
+
+.services{
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 250px;
+
+    position: relative;
+    top: 100px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    
+}
+.service-name{
+    position: relative;
+    left: 40px;
+    text-align: left;
+    font-size: 20px;
+    width: 300px;
+
+}
+
+.service-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-img img{
+    position: relative;
+    left: 40px;
+    width: 75%;
+}
+
+.service-description{
+    width:300px;
+    position: relative;
+    left: 40px;
+    font-size: 15px;
+    color: #666666;
+}
