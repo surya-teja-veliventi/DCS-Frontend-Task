@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+
 *{
 
     margin:0;
     padding:0;
     box-sizing: border-box;
 
-    font-family: 'Poppins', 'sans-serif';
+    font-family:  'Poppins','Arial';
     
 }
 
@@ -14,11 +15,11 @@ body{
 
     background-color: #ffffff;
 
-
 }
+
 /* ----------------------------------- */
 .bigdiv{
-    background-image: url("/WebDevlopment/DCSFrontendTask/Resources/hero_bg.png");
+    background-image: url("Resources/hero_bg.png");
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -108,7 +109,8 @@ body{
 
 #signup:hover{
     background-color:transparent;
-    color: #000000;
+    color: #ffffff;
+    border: 2px solid #FA8B02;
 }
 /* ------------------------------------------------- */
 .booking {
@@ -132,10 +134,8 @@ body{
 }
 
 /* ------------------------------------------------ */
-.popular-destinations{
-    width:100%;
-    box-sizing: border-box;
-}
+
+
 .popular-destinations-title{
 
     font-size: 20px;
@@ -167,23 +167,55 @@ body{
     background-color: #FA8B02;
     color:#ffffff;
 }
-.popular-destination-pics{
+
+.popular-destination{
+
+    box-sizing: content-box;
+    width: 100%;
+    
 
     display: inline-flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
+    align-content: center;
+    justify-self: center;
+
+}
+
+.popular-destination-name{
+    width:350px;
+    font-size: 17.5px;
+    color: #666666;
     
     
 }
 
+
 .destination{
+    box-sizing: content-box;
     transform: scale(.75);
+    margin:0;
 }
+
+
 
 .day-align, .euros{
     color:#FA8B02;
     display: inline-flex;
+    font-size: 15px;
+}
+
+.euros{
+    color:#FA8B02;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.pricing{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* -------------------------------------- */
@@ -232,3 +264,61 @@ body{
 }
 
 /* ------------------------------ */
+
+.special-offers{
+
+    box-sizing: content-box;
+    height: 300px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    background-image: linear-gradient(90deg, #FFCFA6,#FFB48B,#FEA775);
+
+}
+
+.about-special-offers{
+    height: 250px;
+    width: 400px;
+
+    text-align: center;
+
+    position: relative;
+    top: 25px;
+    
+    padding: 20px;
+
+    background-color: rgba(255,255,255,25%);
+    border-radius: 25px;
+    
+}
+
+.contact-for-special-offers{
+    background-color: #FA8B02;
+    border: transparent;
+    border-radius: 25px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+
+    transition: all;
+    transition-duration: .5s;
+
+    margin-top: 10px;
+}
+
+.contact-for-special-offers:hover{
+    background-color: transparent;
+    color: #FA8B02;
+    border: 2px solid #FA8B02;
+}
+
+.special-offers-girl img{
+    position: relative;
+    top: -90px;
+    width: 65%;
+}
