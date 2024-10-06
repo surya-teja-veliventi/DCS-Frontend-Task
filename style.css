@@ -328,7 +328,7 @@ body{
 
 .services{
 
-    box-sizing: border-box;
+    box-sizing: content-box;
     width: 100%;
     height: 250px;
 
@@ -343,7 +343,7 @@ body{
 }
 .service-name{
     position: relative;
-    left: 40px;
+    left: 30px;
     text-align: left;
     font-size: 20px;
     width: 300px;
@@ -358,14 +358,14 @@ body{
 
 .service-img img{
     position: relative;
-    left: 40px;
+    left: 30px;
     width: 75%;
 }
 
 .service-description{
     width:300px;
     position: relative;
-    left: 40px;
+    left: 30px;
     font-size: 15px;
     color: #666666;
 }
