@@ -152,6 +152,8 @@ body{
     border: 0px solid transparent;
     border-radius: 100%;
 
+    margin-left: 10px;
+
     background-color:  #EFEFEF;
     color: #b5b5b5;
 
@@ -466,4 +468,98 @@ body{
 
 .bike-picture{
     margin-bottom: -30px;
+}
+
+/* ------------------------------------------------ */
+
+.most-popular-packages{
+    height:800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.pop-package-div{
+    width:100%;
+    height: 700px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.pop-package-1,.pop-package-2, .pop-package-3,.pop-package-4{
+    width:20%;
+    height:600px;
+    background-color: #ffffff;
+    border: 25px solid rgba(255, 255, 255, 100%);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+
+    box-shadow: 0 1px 25px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1px, 1px;
+    
+    
+
+}
+.pop-package-1 img,.pop-package-2 img, .pop-package-3 img,.pop-package-4 img{
+    width:100%;
+    height:220px;
+}
+.pop-package-1 i,.pop-package-2 i, .pop-package-3 i,.pop-package-4 i{
+    
+    height:20px;
+}
+
+.most-pop-div-ttl{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 300px;
+}
+
+.button-for-most-pop-package{
+    
+    font-size: 15px;
+    background-color: #FA8B02;
+    border: transparent;
+    border-radius: 25px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+
+    transition: all;
+    transition-duration: .5s;
+
+    margin-top: 20px;
+}
+
+.button-for-most-pop-package:hover{
+
+    
+    background-color: transparent;
+    color: #FA8B02;
+    border: 2px solid #FA8B02;
+
+}
+
+.money{
+    color: #FA8B02;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.euro{
+    color: #bfbfbf;
+    font-size: 15px;
+    font-weight: normal;
 }
