@@ -136,14 +136,28 @@ body{
 
 /* ------------------------------------------------ */
 
+.popular-destinations{
+    width:100%;
+    height: 700px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .popular-destinations-title{
 
+    width: 100%;
     font-size: 20px;
     font-weight: 900;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+
+    margin-bottom: 50px;
+    padding-left: 175px;
+    padding-right: 175px;
+    
     
     
 }
@@ -176,38 +190,39 @@ body{
 
     box-sizing: content-box;
     width: 100%;
-    
-    
-    display: inline-flex;
-    
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    justify-self: center;
+    height: 300px;
 
+    display: flex;
+    justify-content: center;
 }
 
 .popular-destination-name{
-    width:350px;
-    font-size: 17.5px;
+    width:100%;
+    font-size: 12.5px;
     color: #666666;
     
     
 }
 
 
-.destination{
-    box-sizing: content-box;
-    transform: scale(.75);
-    margin:0;
+.destination-1,.destination-2,.destination-3,.destination-4{
+    width: 18%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: left ;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.destination-1 img,.destination-2 img,.destination-3 img,.destination-4 img{
+    width: 100%;
+    height: 290px;
 }
 
 
 
 .day-align, .euros{
     color:#FA8B02;
-    display: inline-flex;
     font-size: 15px;
 }
 
@@ -215,12 +230,6 @@ body{
     color:#FA8B02;
     font-size: 25px;
     font-weight: 900;
-}
-
-.pricing{
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 /* -------------------------------------- */
