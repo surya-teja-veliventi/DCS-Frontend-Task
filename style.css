@@ -3,6 +3,7 @@
 
 *{
 
+    /* outline: 2px solid red;; */
     margin:0;
     box-sizing: border-box;
 
@@ -23,6 +24,8 @@ body{
     display: flex;
     flex-wrap: wrap;
     height: 708px;
+    width: 100%;
+    
 }
 
 .header{
@@ -122,6 +125,7 @@ body{
     justify-content: center;
     align-items: center;
     
+    
 }
 
 .quote1{
@@ -140,6 +144,8 @@ body{
     width:100%;
     height: 700px;
 
+    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,6 +154,7 @@ body{
 .popular-destinations-title{
 
     width: 100%;
+    height: 100px;
     font-size: 20px;
     font-weight: 900;
     display: flex;
@@ -215,7 +222,7 @@ body{
     margin-right: 15px;
 }
 .destination-1 img,.destination-2 img,.destination-3 img,.destination-4 img{
-    width: 100%;
+    width: 90%;
     height: 290px;
 }
 
@@ -236,18 +243,21 @@ body{
 
 .best-company-girl{
     transform: scale(.75);
+    
 }
 
 .best-company{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     height: 750px;
+    width: 100%;
+    
 }
 
 .best-company-theory{
-    width: 675px;
+    width: 50%;
 }
 
 .best-company-welcome{
@@ -281,7 +291,6 @@ body{
 
 .special-offers{
 
-    box-sizing: content-box;
     height: 450px;
     width: 100%;
 
@@ -289,6 +298,7 @@ body{
     flex-direction: row-reverse;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: center;
 
     background-image: linear-gradient(90deg, #FFCFA6,#FFB48B,#FEA775);
 
@@ -305,7 +315,7 @@ body{
 
 .about-special-offers{
     height: 320px;
-    width: 570px;
+    width: 45%;
 
     text-align: center;
     display: flex;
@@ -316,8 +326,7 @@ body{
     padding: 50px;
 
     position: relative;
-    top:68px;
-    
+    bottom: 68px;
 
     background-color: rgba(255,255,255,25%);
     border-radius: 25px;
@@ -347,45 +356,53 @@ body{
     border: 2px solid #FA8B02;
 }
 
-.special-offers-girl img{
+.special-offers-girl{
+    width: 40%;
+    height: 500;
+}
+
+.special-offers-girl img {
+    width: 100%;
+    height: 550px;
     position: relative;
-    top: -150px;
+    top:-100px;
 }
 
 /* --------------------------------------------------------- */
 
 
 .services{
-
-    box-sizing: content-box;
     width: 100%;
     height: 660px;
 
+    
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
 
     
 }
-.service-name{
-    text-align: left;
-    font-size: 20px;
-    width: 300px;
 
-}
 
-.service-img{
+.service-img-1,.service-img-2,.service-img-3,.service-img-4{
+    width:20%;
+    height: 400px;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
+    
+
+}
+.service-img-1 img,.service-img-2 img,.service-img-3 img,.service-img-4 img{
+    width:90%;
+    height: 250px;
 }
 
-.service-img img{
-    width: 75%;
-}
+
 
 .service-description{
-    width:300px;
+    width:100%;
     font-size: 15px;
     color: #666666;
 }
@@ -393,8 +410,11 @@ body{
 /* ------------------------------------------------------ */
 
 .book-a-bike{
-    height: 450px;
+
+    
+    
     width: 100%;
+    height: 400px;
 
     background-image: linear-gradient(90deg, #FFCFA6,#FFB48B,#FEA775);
 
@@ -430,7 +450,7 @@ body{
     border-radius: 25px;
 
     height: 320px;
-    width: 600px;
+    width: 100%;
 
     padding: 20px;
 }
@@ -476,12 +496,23 @@ body{
 }
 
 .bike-picture{
-    margin-bottom: -30px;
+    width: 37.5%;
+    height: 375px;
+
+    position: relative;
+    bottom: -50px;
+}
+
+.bike-picture img {
+    width: 100%;
+    height: 100%;
 }
 
 /* ------------------------------------------------ */
 
 .most-popular-packages{
+
+    
     height:800px;
     width: 100%;
     display: flex;
@@ -524,27 +555,29 @@ body{
 }
 .pop-package-1 i,.pop-package-2 i, .pop-package-3 i,.pop-package-4 i{
     
-    height:20px;
+    color:#FA8B02;
+}
+.pop-package-1 pre,.pop-package-2 pre, .pop-package-3 pre,.pop-package-4 pre{
+    
+    color: #999999;
 }
 
-.most-pop-div-ttl{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin-left: 300px;
-}
+
 
 .button-for-most-pop-package{
     
     font-size: 15px;
-    background-color: #FA8B02;
-    border: transparent;
+
+    background-color: transparent;
+    color: #FA8B02;
+    border: 2px solid #FA8B02;
+
+    
     border-radius: 25px;
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
-    color: #ffffff;
+    
 
     transition: all;
     transition-duration: .5s;
@@ -555,9 +588,9 @@ body{
 .button-for-most-pop-package:hover{
 
     
-    background-color: transparent;
-    color: #FA8B02;
-    border: 2px solid #FA8B02;
+    background-color: #FA8B02;
+    border: transparent;
+    color: #ffffff;
 
 }
 
