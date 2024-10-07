@@ -221,9 +221,9 @@
 
         <div class = "about-special-offers">
 
-            <h2>Get Special Offers for Organizations</h2>
+            <p class = "spl-offer-org">Get Special Offers for Organizations</p>
 
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1500s</p>
+            <p class = "spl-offer-org-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1500s</p>
 
 
             <button class="contact-for-special-offers">Contact Us</button>
@@ -232,12 +232,13 @@
 
     </div>
 
+
     <!--Services-->
 
     <div class="services">
 
         <div class="service-img">
-            <img src = "Resources/services01.svg" alt = "service-img">
+            <a href = "#"><img src = "Resources/services01.svg" alt = "service-img"></a>
             <br>
             <h3 class = "service-name">Bike and rickshaw rental</h3>
             <br>
@@ -246,7 +247,7 @@
         </div>
 
         <div class="service-img">
-            <img src = "Resources/services02.svg" alt = "service-img">
+            <a href = "#"><img src = "Resources/services02.svg" alt = "service-img"></a>
             <br>
             <h3 class = "service-name">Guided tour of the countryside</h3>
             <p class = "service-description">Live the real Lucchese experiance by visiting suburbs by bike!</p>
@@ -254,7 +255,7 @@
         </div>
 
         <div class="service-img">
-            <img src = "Resources/services03.svg" alt = "service-img">
+            <a href = "#"><img src = "Resources/services03.svg" alt = "service-img"></a>
             <br>
             <h3 class = "service-name">Taxi and NCC service</h3>
             <br>
@@ -263,7 +264,7 @@
         </div>
 
         <div class="service-img">
-            <img src = "Resources/services04.svg" alt = "service-img">
+            <a href = "#"><img src = "Resources/services04.svg" alt = "service-img"></a>
             <br>
             <h3 class = "service-name">Bus Package</h3>
             <br>       
@@ -272,7 +273,59 @@
 
     </div>
 
+    <br>
+    <!--Book a Bike-->
 
+    <div class="book-a-bike">
+
+        <div class="details-to-book-bike">
+            <p class = "book">Book Now Bike</p>
+            <div class="to-book-bike">
+            <div class="bookdetails">
+
+                <div class="details-left">
+
+                    <p class = "details-name">Name and Surname</p>
+                    <input type = "text" placeholder="Enter your name and surname">
+
+                    <p class = "details-name">Telephone number</p>
+                    <input type = "text" placeholder="Enter your telephone number">
+
+                    <p class = "details-name">Date</p>
+                    <input type = "text" placeholder="Select the date"> <i class="uil uil-calendar-alt"></i>
+
+                </div>
+
+                <div class="details-right">
+
+                    <p class = "details-name">Email Address</p>
+                    <input type = "text" placeholder="Enter your email address">
+
+                    <p class = "details-name">Service Type</p>
+                    <select name = "service-type" id = "service-type" >
+                        <option value = "~">Select the service types</option>
+                        <option value = "service-type-1">service type 1</option>
+                        <option value = "service-type-2">service type 2</option>
+                        <option value = "service-type-3">service type 3</option>
+                    </select>
+
+                    <p class = "details-name">Time</p>
+                    <input type = "text" placeholder="Select the time"> <i class="uil uil-calendar-alt"></i>
+                </div>
+
+                
+
+            </div>
+
+            <button class="button-for-bike">Book Now</button>
+            </div>
+            
+        </div>
+        <img src="Resources/bike picture.png" class = "bike-picture" alt = "bike-picture">
+        
+    </div>
+
+    <BR><br><br>
 
 </body>
 </html>
