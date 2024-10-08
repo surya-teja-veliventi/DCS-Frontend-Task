@@ -544,7 +544,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 1px, 1px;
     
     
 
@@ -604,4 +603,76 @@ body{
     color: #bfbfbf;
     font-size: 15px;
     font-weight: normal;
+}
+
+/* ------------------------------------------------------ */
+
+.happy-customer-says{
+    width: 100%;
+    height: 500px;
+}
+
+.happy-customer-title{
+    width: 100%;
+    height: 100px;
+
+    font-size: 20px;
+    font-weight: 900;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 175px;
+    padding-right: 175px;
+
+}
+
+.happy-reviews{
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.review-1, .review-2{
+    width: 36%;
+    height: 100%;
+    
+    background-color: #ffffff;
+    border: 25px solid rgba(255, 255, 255, 100%);
+
+    
+    box-shadow: 0 1px 25px rgba(0,0,0,0.1);
+
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.review-1 img, .review-2 img{
+    width: 15%;
+    border-radius: 50%;
+
+    margin-bottom: 5px;
+}
+
+.happy-review-pic-1,.happy-review-pic-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-1 p, .review-2 p{
+    color: #4d4d4d;
+    font-weight: lighter;
+    font-size: 12px;
 }
