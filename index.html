@@ -1,534 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Tours to Tuscany</title>
-    
+
     <!--Main Stylesheet-->
-    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!--Used for Copying Icons-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/thinline.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-
-</head>
-<body>
-
-
-<div class="bigdiv">
-
-    <!--Header Bar-->
-    <header class="header">
-
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/thinline.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bigdiv">
+      <!--Header Bar-->
+      <header class="header">
         <!--Logo-->
-        <a href = "#" class="logo">
-            <img src = "Resources/logo.svg" alt = "logo">
+        <a href="#" class="logo">
+          <img src="Resources/logo.svg" alt="logo" />
         </a>
 
         <!--NavBar-->
         <div class="navbar">
-            <a href = "#" id = "home-page">Home</a>
-            <a href = "about.html">About Us</a>
-            <a href = "#">Tour Packages</a>
-            <a href = "#">Contact Us</a>
+          <a href="#" id="home-page">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="#">Tour Packages</a>
+          <a href="#">Contact Us</a>
         </div>
 
         <!--Lanuage, Login, Signup-->
         <div class="language-login-signup">
+          <!--Language-->
+          <select name="lan" id="lan">
+            <option value="eng">Eng</option>
+            <option value="tml">Tam</option>
+            <option value="tlg">Tel</option>
+          </select>
 
-            <!--Language-->
-            <select name="lan" id="lan">
-                <option value = "eng">Eng</option>
-                <option value = "tml">Tam</option>
-                <option value = "tlg">Tel</option>
-            </select>
+          <!--Login-->
+          <button id="login">Login</button>
 
-            <!--Login-->
-            <button id = "login">Login</button>
-
-            <!--Sign Up-->
-            <button id = "signup">Sign Up</button>
-
+          <!--Sign Up-->
+          <button id="signup">Sign Up</button>
         </div>
+      </header>
 
-    </header>
-    
-    <!--Booking-->
-    <div class="booking">
-        
-        <p class = "quote1">Enjoy in the best way!</p>
-        <p class = "quote2">Enjoy our services for your trip anytime</p>
+      <!--Booking-->
+      <div class="booking">
+        <p class="quote1">Enjoy in the best way!</p>
+        <p class="quote2">Enjoy our services for your trip anytime</p>
         <div class="traveldetails"></div>
+      </div>
     </div>
 
-</div>
-
-<br>
+    <br />
 
     <!--Popular Destinations-->
     <div class="popular-destinations">
+      <div class="popular-destinations-title">
+        <h2>Explore Our Popular Destinations</h2>
 
-        <div class = "popular-destinations-title">
+        <!--Left-Right Buttons-->
+        <div class="button-div">
+          <button class="btn">&lt;</button>
+          <button class="btn">&gt;</button>
+        </div>
+      </div>
+      <!-- Cards  -->
+      <div class="popular-destination">
+        <div class="destination-1">
+          <img
+            src="Resources/popular_dest_1.svg"
+            class="popular-destination-pics"
+          />
 
-            <h2>Explore Our Popular Destinations</h2>
+          <h3>Lucca Bike Tour</h3>
 
-            <!--Left-Right Buttons-->
-            <div>
-                <button class = "btn">&lt;</button>
-                <button class = "btn">&gt;</button>
-            </div>
+          <pre class="pricing">from   <b class = "euros">34 €</b></pre>
+
+          <div class="day-align">
+            <pre><i class="uil uil-calendar-alt"></i> EVERYDAY            <i class="uil uil-users-alt"></i>3-10 PP</pre>
+          </div>
+
+          <p class="popular-destination-name">
+            A tour of the city and its surroundings led by a professional guide
+            ...
+          </p>
         </div>
 
-        <div class = "popular-destination">
+        <div class="destination-2">
+          <img
+            src="Resources/popular_dest_2.svg"
+            class="popular-destination-pics"
+          />
+          <h3>Wine tasting in Tuscany</h3>
 
-            <div class="destination-1">
+          <pre class="pricing">from <b class = "euros">  34 €</b></pre>
 
-                <img src = "Resources/popular_dest_1.svg" class = "popular-destination-pics">
-                
-                <h3>Lucca Bike Tour</h3>
-                
-                <pre class = "pricing">from   <b class = "euros">34 €</b></pre>
-                
-                <div class = "day-align">
-                    <pre><i class="uil uil-calendar-alt"></i> EVERYDAY            <i class="uil uil-users-alt"></i>3-10 PP</pre>
-                </div>    
-                
-                <p class = "popular-destination-name">A tour of the city and its surroundings led by a professional guide ...</p>
+          <div class="day-align">
+            <pre><i class="uil uil-calendar-alt"></i> MONDAY                 <i class="uil uil-users-alt"></i>10-30 PP</pre>
+          </div>
 
-            </div>
-
-            <div class="destination-2">
-
-                <img src = "Resources/popular_dest_2.svg" class = "popular-destination-pics">
-                <h3>Wine tasting in Tuscany</h3>
-
-                <pre class = "pricing">from <b class = "euros">  34 €</b></pre>
-
-                <div class = "day-align">
-                    <pre><i class="uil uil-calendar-alt"></i> MONDAY                 <i class="uil uil-users-alt"></i>10-30 PP</pre>              
-                </div>
-
-                <p class = "popular-destination-name">The real magic is here where you can enjoy the best Tuscan wine and eat...</p>
-
-            </div>
-
-            <div class="destination-3">
-
-                <img src = "Resources/popular_dest_3.svg" class = "popular-destination-pics">
-                <h3>Cinque Terre Tour</h3>
-
-                <pre class = "pricing">from <b class = "euros">  34 €</b></pre>
-
-                <div class = "day-align">
-                    <pre ><i class="uil uil-calendar-alt"></i>TO BE DECIEDED   <i class="uil uil-users-alt"></i>10-50 PP</pre>
-                </div>    
-
-                <p class = "popular-destination-name">Visiting the 5 Terre is must, and you can never go there enough ...</p>
-
-            </div>
-
-            <div class="destination-4">
-
-                <img src = "Resources/popular_dest_4.svg" class = "popular-destination-pics">
-                <h3>Siena and Surroundings</h3>
-
-                <pre class = "pricing">from <b class = "euros">  34 €</b></pre>
-
-                <div class = "day-align">
-                    
-                    <pre><i class="uil uil-calendar-alt"></i>TO BE DECIEDED   <i class="uil uil-users-alt"></i>5-10 PP</pre>
-                    
-                </div>
-
-                <p class = "popular-destination-name">Visit the beautiful Siena and the cities that surround it to experiance ...</p>
-
-            </div>
-
+          <p class="popular-destination-name">
+            The real magic is here where you can enjoy the best Tuscan wine and
+            eat...
+          </p>
         </div>
-        
+
+        <div class="destination-3">
+          <img
+            src="Resources/popular_dest_3.svg"
+            class="popular-destination-pics"
+          />
+          <h3>Cinque Terre Tour</h3>
+
+          <pre class="pricing">from <b class = "euros">  34 €</b></pre>
+
+          <div class="day-align">
+            <pre><i class="uil uil-calendar-alt"></i>TO BE DECIEDED   <i class="uil uil-users-alt"></i>10-50 PP</pre>
+          </div>
+
+          <p class="popular-destination-name">
+            Visiting the 5 Terre is must, and you can never go there enough ...
+          </p>
+        </div>
+
+        <div class="destination-4">
+          <img
+            src="Resources/popular_dest_4.svg"
+            class="popular-destination-pics"
+          />
+          <h3>Siena and Surroundings</h3>
+
+          <pre class="pricing">from <b class = "euros">  34 €</b></pre>
+
+          <div class="day-align">
+            <pre><i class="uil uil-calendar-alt"></i>TO BE DECIEDED   <i class="uil uil-users-alt"></i>5-10 PP</pre>
+          </div>
+
+          <p class="popular-destination-name">
+            Visit the beautiful Siena and the cities that surround it to
+            experiance ...
+          </p>
+        </div>
+      </div>
     </div>
 
     <!--best company-->
-    <div class = "best-company">
+    <div class="best-company">
+      <div class="best-company-girl">
+        <img src="Resources/best_company01.svg" alt="best company girl" />
+      </div>
 
-        <img src = "Resources/best_company01.svg" class = "best-company-girl" alt = "best company girl">
-        
-        <div class="best-company-theory">
-            <p class = "best-company-welcome">WELCOME TO OUR SITE!</p>
-            <h2>We are the best company for your visit</h2>
-            <br>
-            <p class = "best-company-para">After decades of experiance, and a whole life in Lucca, we offer you the most complete tourism service in the city. In addition to having bikes and rickshawa to have as much as fun you want, you have the choice of tour guides with whom to tour and drivers for your every need! We offer packages in the way that you get the most at the lowest price. Book with us and we will always be available for you!</p>
-            
-            <br>
+      <div class="best-company-theory">
+        <p class="best-company-welcome">WELCOME TO OUR SITE!</p>
+        <h2>We are the best company for your visit</h2>
+        <br />
+        <p class="best-company-para">
+          After decades of experiance, and a whole life in Lucca, we offer you
+          the most complete tourism service in the city. In addition to having
+          bikes and rickshawa to have as much as fun you want, you have the
+          choice of tour guides with whom to tour and drivers for your every
+          need! We offer packages in the way that you get the most at the lowest
+          price. Book with us and we will always be available for you!
+        </p>
 
-            <div class="best-company-achievements">
-                <div class="ach">
-                    <span class="ach-no">20+</span>
-                    <p class = "ach-name">Years</p>
-                    <p class = "ach-name">Experiance</p>
-                </div>
-    
-                <div class="ach">
-                    <span class="ach-no">100+</span>
-                    <p class = "ach-name">Happy</p>
-                    <p class = "ach-name">Customer</p>
-    
-                </div>
-                
-                <div class="ach">
-                    <span class="ach-no">15+</span>
-                    <p class = "ach-name">Choice</p>
-                    <p class = "ach-name">of Services</p>
-    
-                </div>
-    
-                <div class="ach">
-                    <span class="ach-no">10+</span>
-                    <p class = "ach-name">Professional</p>
-                    <p class = "ach-name">Guides</p>
-    
-                </div>
-    
-            </div>
+        <br />
+
+        <div class="best-company-achievements">
+          <div class="ach">
+            <span class="ach-no">20+</span>
+            <p class="ach-name">Years</p>
+            <p class="ach-name">Experiance</p>
+          </div>
+
+          <div class="ach">
+            <span class="ach-no">100+</span>
+            <p class="ach-name">Happy</p>
+            <p class="ach-name">Customer</p>
+          </div>
+
+          <div class="ach">
+            <span class="ach-no">15+</span>
+            <p class="ach-name">Choice</p>
+            <p class="ach-name">of Services</p>
+          </div>
+
+          <div class="ach">
+            <span class="ach-no">10+</span>
+            <p class="ach-name">Professional</p>
+            <p class="ach-name">Guides</p>
+          </div>
         </div>
-
+      </div>
     </div>
-        
+
     <!--Special Offers-->
 
     <div class="special-offers">
+      <div class="special-offers-girl">
+        <img src="Resources/special_offers01.svg" alt="special-offers-girl" />
+      </div>
 
-        <div class = "special-offers-girl">
-            <img src = "Resources/special_offers01.svg" alt = "special-offers-girl" >
-        </div>
-        
+      <div class="about-special-offers">
+        <p class="spl-offer-org">Get Special Offers for Organizations</p>
 
-        <div class = "about-special-offers">
+        <p class="spl-offer-org-para">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since 1500s
+        </p>
 
-            <p class = "spl-offer-org">Get Special Offers for Organizations</p>
-
-            <p class = "spl-offer-org-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1500s</p>
-
-
-            <button class="contact-for-special-offers">Contact Us</button>
-
-        </div>
-
+        <button class="contact-for-special-offers">Contact Us</button>
+      </div>
     </div>
 
-    <br><br><br>
+    <br /><br /><br />
 
     <!--Services-->
 
     <div class="services">
+      <div class="service-img-1">
+        <img src="Resources/services01.svg" alt="service-img" />
+        <h3 class="service-name">Bike and rickshaw rental</h3>
+        <br />
+        <p class="service-description">
+          Book your quality vehicle quickly for an hour or all day!
+        </p>
+      </div>
 
-        <div class="service-img-1">
-            <img src = "Resources/services01.svg" alt = "service-img">
-            <h3 class = "service-name">Bike and rickshaw rental</h3>
-            <br>
-            <p class = "service-description">Book your quality vehicle quickly for an hour or all day!</p>
-            
-        </div>
+      <div class="service-img-2">
+        <img src="Resources/services02.svg" alt="service-img" />
+        <h3 class="service-name">Guided tour of the countryside</h3>
+        <p class="service-description">
+          Live the real Lucchese experiance by visiting suburbs by bike!
+        </p>
+      </div>
 
-        <div class="service-img-2">
-            <img src = "Resources/services02.svg" alt = "service-img">
-            <h3 class = "service-name">Guided tour of the countryside</h3>
-            <p class = "service-description">Live the real Lucchese experiance by visiting suburbs by bike!</p>
+      <div class="service-img-3">
+        <img src="Resources/services03.svg" alt="service-img" />
+        <h3 class="service-name">Taxi and NCC service</h3>
+        <br />
+        <p class="service-description">
+          Do you need not only a bike but also a driver? Then you have found the
+          right place!
+        </p>
+      </div>
 
-        </div>
-
-        <div class="service-img-3">
-            <img src = "Resources/services03.svg" alt = "service-img">
-            <h3 class = "service-name">Taxi and NCC service</h3>
-            <br>
-            <p class = "service-description">Do you need not only a bike but also a driver? Then you have found the right place!</p>
-
-        </div>
-
-        <div class="service-img-4">
-            <img src = "Resources/services04.svg" alt = "service-img">
-            <h3 class = "service-name">Bus Package</h3>
-            <br>       
-            <p class = "service-description">Do you need not only a bike but also a driver? Then you have found the right place!</p> 
-        </div>
-
+      <div class="service-img-4">
+        <img src="Resources/services04.svg" alt="service-img" />
+        <h3 class="service-name">Bus Package</h3>
+        <br />
+        <p class="service-description">
+          Do you need not only a bike but also a driver? Then you have found the
+          right place!
+        </p>
+      </div>
     </div>
 
-    <br>
+    <br />
     <!--Book a Bike-->
 
     <div class="book-a-bike">
+      <div class="details-to-book-bike">
+        <p class="book">Book Now Bike</p>
+        <div class="to-book-bike">
+          <div class="bookdetails">
+            <div class="details-left">
+              <p class="details-name">Name and Surname</p>
+              <input type="text" placeholder="Enter your name and surname" />
 
-        <div class="details-to-book-bike">
-            <p class = "book">Book Now Bike</p>
-            <div class="to-book-bike">
-            <div class="bookdetails">
+              <p class="details-name">Telephone number</p>
+              <input type="text" placeholder="Enter your telephone number" />
 
-                <div class="details-left">
-
-                    <p class = "details-name">Name and Surname</p>
-                    <input type = "text" placeholder="Enter your name and surname">
-
-                    <p class = "details-name">Telephone number</p>
-                    <input type = "text" placeholder="Enter your telephone number">
-
-                    <p class = "details-name">Date</p>
-                    <input type = "text" placeholder="Select the date"> <i class="uil uil-calendar-alt"></i>
-
-                </div>
-
-                <div class="details-right">
-
-                    <p class = "details-name">Email Address</p>
-                    <input type = "text" placeholder="Enter your email address">
-
-                    <p class = "details-name">Service Type</p>
-                    <select name = "service-type" id = "service-type" >
-                        <option value = "~">Select the service types</option>
-                        <option value = "service-type-1">service type 1</option>
-                        <option value = "service-type-2">service type 2</option>
-                        <option value = "service-type-3">service type 3</option>
-                    </select>
-
-                    <p class = "details-name">Time</p>
-                    <input type = "text" placeholder="Select the time"> <i class="uil uil-calendar-alt"></i>
-                </div>
-
-                
-
+              <p class="details-name">Date</p>
+              <input type="date" placeholder="Select the date" />
             </div>
 
-            <button class="button-for-bike">Book Now</button>
+            <div class="details-right">
+              <p class="details-name">Email Address</p>
+              <input type="text" placeholder="Enter your email address" />
+
+              <p class="details-name">Service Type</p>
+              <select name="service-type" id="service-type">
+                <option value="~">Select the service types</option>
+                <option value="service-type-1">service type 1</option>
+                <option value="service-type-2">service type 2</option>
+                <option value="service-type-3">service type 3</option>
+              </select>
+
+              <p class="details-name">Time</p>
+              <input type="time" placeholder="Select the time" />
             </div>
-            
+          </div>
+
+          <button class="button-for-bike">Book Now</button>
         </div>
-        
-        <div  class = "bike-picture" >
-            <img src="Resources/bike picture.png"alt = "bike-picture">
-        </div>
-        
-        
+      </div>
+
+      <div class="bike-picture">
+        <img src="Resources/bike picture.png" alt="bike-picture" />
+      </div>
     </div>
 
-    <br><br><br>
+    <br /><br /><br />
 
     <!--The Most Popular Packages-->
 
     <div class="most-popular-packages">
+      <div class="most-pop-div-ttl">
+        <h2>The Most Popular Packages</h2>
+      </div>
 
-        <div class="most-pop-div-ttl">
-            <h2>The Most Popular Packages</h2>
+      <div class="pop-package-div">
+        <div class="pop-package-1">
+          <img src="Resources/pop_package01.svg" alt="pop-package-1" />
+
+          <h4>BIKE/RICKSHAW</h4>
+
+          <p class="money">
+            <sup class="euro">€ </sup>10<sub class="euro">/day</sub>
+          </p>
+
+          <pre><i class="uil uil-calendar-alt"></i>  Your bike for a day</pre>
+          <pre><i class='bx bx-map-alt' ></i>  City App</pre>
+          <pre><i class='bx bxs-discount'></i>  Discount on Rickshaw</pre>
+          <pre><i class="uil uil-headphones-alt"></i>  Guaranteed Support</pre>
+
+          <button class="button-for-most-pop-package">Book Now</button>
         </div>
-        
 
-        <div class="pop-package-div">
+        <div class="pop-package-2">
+          <img src="Resources/pop_package02.svg" alt="pop-package-2" />
 
-            <div class="pop-package-1">
+          <h4>BIKE TOURS</h4>
 
-                <img src = "Resources/pop_package01.svg" alt = "pop-package-1">
-                <br>
+          <p class="money">
+            <sup class="euro">€ </sup>30<sub class="euro">/day</sub>
+          </p>
 
-                <h4>BIKE/RICKSHAW</h4>
-                <br>
+          <pre><i class='bx bx-cycling'></i>  A Mountain Bike Included</pre>
+          <pre><i class='bx bx-male'></i>  A Guide for You</pre>
+          <pre><i class='bx bx-wine'></i>  Bottle of Water</pre>
+          <pre><i class="uil uil-headphones-alt"></i>  Guaranteed Support</pre>
 
-                <p class = "money"><sup class = "euro">€ </sup>10<sub class = "euro">/day</sub></p>
-                <br>
-
-                <pre><i class="uil uil-calendar-alt"></i>  Your bike for a day</pre>
-                <pre><i class='bx bx-map-alt' ></i>  City App</pre>
-                <pre><i class='bx bxs-discount'></i>  Discount on Rickshaw</pre>
-                <pre><i class="uil uil-headphones-alt"></i>  Guaranteed Support</pre>
-                <br>
-
-                <button class="button-for-most-pop-package">Book Now</button>
-
-            </div>
-
-            <div class="pop-package-2">
-                <img src = "Resources/pop_package02.svg" alt = "pop-package-2">
-                <br>
-
-                <h4>BIKE TOURS</h4>
-                <br>
-
-                <p class = "money"><sup class = "euro">€ </sup>30<sub class = "euro">/day</sub></p>
-                <br>
-
-                <pre><i class='bx bx-cycling'></i>  A Mountain Bike Included</pre>
-                <pre><i class='bx bx-male'></i>  A Guide for You</pre>
-                <pre><i class='bx bx-wine'></i>  Bottle of Water</pre>
-                <pre><i class="uil uil-headphones-alt"></i>  Guaranteed Support</pre>
-                <br>
-
-                <button class="button-for-most-pop-package">Book Now</button>
-
-                
-            </div>
-
-            <div class="pop-package-3">
-                <img src = "Resources/pop_package03.svg" alt = "pop-package-3">
-                <br>
-                <h4>BUS TRIPS</h4>
-                <br>
-                <p class = "money"><sup class = "euro">€ </sup>45<sub class = "euro">/day</sub></p>
-                <br>
-
-                <pre><i class='bx bx-spreadsheet' ></i> Park Ticket</pre>
-                <pre><i class='bx bx-bus' ></i>  Return Bus</pre>
-                <pre><i class='bx bx-male-female' ></i>  Companion</pre>
-                <pre><i class="uil uil-headphones-alt"></i>  Guaranteed Support</pre>
-                <br>
-                
-                <button class="button-for-most-pop-package">Book Now</button>
-                
-            </div>
-
-            <div class="pop-package-4">
-                <img src = "Resources/pop_package04.svg" alt = "pop-package-4">
-                <br>
-                <h4>TRANSFER</h4>
-                <br>
-                <p class = "money"><sup class = "euro">€ </sup>10<sub class = "euro">/day</sub></p>
-                <br>
-                
-
-                <pre><i class="uit uit-head-side"></i>  Personal-Driver</pre>
-                <pre><i class='bx bxs-map' ></i>  Wherever you want</pre>
-                <pre><i class='bx bx-dollar-circle' ></i>  At the best price</pre>
-                <pre><i class="uil uil-headphones-alt"></i>  Guaranteed Support</pre>
-                <br>
-                
-                <button class="button-for-most-pop-package">Book Now</button>
-
-            </div>
-
+          <button class="button-for-most-pop-package">Book Now</button>
         </div>
-        
 
+        <div class="pop-package-3">
+          <img src="Resources/pop_package03.svg" alt="pop-package-3" />
+
+          <h4>BUS TRIPS</h4>
+
+          <p class="money">
+            <sup class="euro">€ </sup>45<sub class="euro">/day</sub>
+          </p>
+
+          <pre><i class='bx bx-spreadsheet' ></i> Park Ticket</pre>
+          <pre><i class='bx bx-bus' ></i>  Return Bus</pre>
+          <pre><i class='bx bx-male-female' ></i>  Companion</pre>
+          <pre><i class="uil uil-headphones-alt"></i>  Guaranteed Support</pre>
+
+          <button class="button-for-most-pop-package">Book Now</button>
+        </div>
+
+        <div class="pop-package-4">
+          <img src="Resources/pop_package04.svg" alt="pop-package-4" />
+
+          <h4>TRANSFER</h4>
+
+          <p class="money">
+            <sup class="euro">€ </sup>10<sub class="euro">/day</sub>
+          </p>
+
+          <pre><i class="uit uit-head-side"></i>  Personal-Driver</pre>
+          <pre><i class='bx bxs-map' ></i>  Wherever you want</pre>
+          <pre><i class='bx bx-dollar-circle' ></i>  At the best price</pre>
+          <pre><i class="uil uil-headphones-alt"></i>  Guaranteed Support</pre>
+
+          <button class="button-for-most-pop-package">Book Now</button>
+        </div>
+      </div>
     </div>
 
     <!--Happy Customer Says-->
 
     <div class="happy-customer-says">
+      <div class="happy-customer-title">
+        <h3>Happy Customer Says</h3>
 
-        <div class = "happy-customer-title">
+        <!--Left-Right Buttons-->
+        <div>
+          <button class="btn">&lt;</button>
+          <button class="btn">&gt;</button>
+        </div>
+      </div>
 
-            <h3>Happy Customer Says</h3>
+      <div class="happy-reviews">
+        <div class="review-1">
+          <div class="happy-review-pic-1">
+            <img src="Resources/happy-customer.png" alt="happy-customer" />
+            <p>Lyod Gomez</p>
+          </div>
 
-            <!--Left-Right Buttons-->
-            <div>
-                <button class = "btn">&lt;</button>
-                <button class = "btn">&gt;</button>
-            </div>
-
+          <p>
+            But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and i will give you a cmplete
+            account of the system, and expound the actual teachings of the great
+            explorer of the truth, the master-builder of human happiness. No one
+            rejects, dislikes, or avoids pleasure itself, because it is pleasure
+          </p>
         </div>
 
-        <div class="happy-reviews">
+        <div class="review-2">
+          <div class="happy-review-pic-2">
+            <img src="Resources/happy-customer.png" alt="happy-customer" />
+            <p>Lyod Gomez</p>
+          </div>
 
-            <div class="review-1">
-
-
-                <div class="happy-review-pic-1">
-                    <img src = "Resources/happy-customer.png" alt = "happy-customer">
-                    <p>Lyod Gomez</p>
-                </div>
-                
-                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and i will give you a cmplete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
-                
-                
-            </div>
-
-            <div class="review-2">
-
-                <div class="happy-review-pic-2">
-                    <img src = "Resources/happy-customer.png" alt = "happy-customer">
-                    <p>Lyod Gomez</p>
-                </div>
-                
-                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and i will give you a cmplete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>                
-
-            </div>
-
+          <p>
+            But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and i will give you a cmplete
+            account of the system, and expound the actual teachings of the great
+            explorer of the truth, the master-builder of human happiness. No one
+            rejects, dislikes, or avoids pleasure itself, because it is pleasure
+          </p>
         </div>
-
+      </div>
     </div>
-
 
     <!--Footer-->
 
     <div class="footer">
+      <div class="footer-details">
+        <br />
 
-        <div class="footer-details">
-
-            <br>
-
-            <div class="logo-for-footer">
-
-                <img src = "Resources/logo.svg" alt = "logo-for-footer">
-            </div>
-
-            <br>
-            <hr class = "hr-footer">
-            <br>
-
-            <div class="footer-links">
-
-                <div class="footer-services">
-                    <p>Services</p>
-                    <a href = "#">Bike and Rickshaw rental</a>
-                    <a href = "#">Guided tours of Lucca</a>
-                    <a href = "#">Guided bike tour of Lucca</a>
-                    <a href = "#">Trip in Tuscan Hills</a>
-                    <a href = "#">Transportation with Luxary cars</a>
-                    <a href = "#">Wine tours by bus with Guide</a>
-                </div>
-
-                <div class="footer-home">
-                    <p>Home</p>
-                    <a href = "index.html">Home</a>
-                    <a href = "about.html">About Us</a>
-                    <a href = "#">Tour Packages</a>
-                </div>
-
-                <div class="footer-help">
-                    <p>Help</p>
-                    <a href = "#">Terms of Use</a>
-                    <a href = "#">Provicy Policy</a>
-                </div>
-
-                <div class="footer-Contacts">
-                    <p>Contacts</p>
-                    <pre><i class='bx bxs-map' ></i>  Piazza Napoleone, Lucca, Tuscany</pre>
-                    <pre><i class='bx bxs-phone-call'></i>  +39 346 368 5708</pre>
-                    <pre><i class='bx bxs-envelope' ></i>  italianlimo@gmail.com</pre>
-                </div>
-
-                <div class="footer-social-media">
-                    <a href = "#"><i class='bx bxl-twitter' ></i></a>
-                    <a href = "#"><i class='bx bxl-facebook' ></i></a>
-                    <a href = "#"><i class='bx bxl-instagram' ></i></a>
-                </div>
-
-            </div>
-
-            <br>
-            <hr class = "hr-footer">
-            <br>
-
-            <div class="copyright">
-
-                <p>Copyright &copy; 2022. All rights reserved.</p>
-
-            </div>
-
+        <div class="logo-for-footer">
+          <img src="Resources/logo.svg" alt="logo-for-footer" />
         </div>
 
-    </div>
+        <br />
+        <hr class="hr-footer" />
+        <br />
 
-</body>
+        <div class="footer-links">
+          <div class="footer-services">
+            <p>Services</p>
+            <a href="#">Bike and Rickshaw rental</a>
+            <a href="#">Guided tours of Lucca</a>
+            <a href="#">Guided bike tour of Lucca</a>
+            <a href="#">Trip in Tuscan Hills</a>
+            <a href="#">Transportation with Luxary cars</a>
+            <a href="#">Wine tours by bus with Guide</a>
+          </div>
+
+          <div class="footer-home">
+            <p>Home</p>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="#">Tour Packages</a>
+          </div>
+
+          <div class="footer-help">
+            <p>Help</p>
+            <a href="#">Terms of Use</a>
+            <a href="#">Provicy Policy</a>
+          </div>
+
+          <div class="footer-Contacts">
+            <p>Contacts</p>
+            <pre><i class='bx bxs-map' ></i>  Piazza Napoleone, Lucca, Tuscany</pre>
+            <pre><i class='bx bxs-phone-call'></i>  +39 346 368 5708</pre>
+            <pre><i class='bx bxs-envelope' ></i>  italianlimo@gmail.com</pre>
+          </div>
+
+          <div class="footer-social-media">
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+          </div>
+        </div>
+
+        <br />
+        <hr class="hr-footer" />
+        <br />
+
+        <div class="copyright">
+          <p>Copyright &copy; 2022. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
