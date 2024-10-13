@@ -35,6 +35,16 @@
         <a href="#" class="logo">
           <img src="Resources/logo.svg" alt="logo" />
         </a>
+        <!-- Offscreen Menu -->
+        <div class="off-screen-nav-bar">
+          <a href="#" id="home-page">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="#">Tour Packages</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="hamburger">
+          <i class="bx bx-menu"></i>
+        </div>
 
         <!--NavBar-->
         <div class="navbar">
@@ -65,7 +75,57 @@
       <div class="booking">
         <p class="quote1">Enjoy in the best way!</p>
         <p class="quote2">Enjoy our services for your trip anytime</p>
-        <div class="traveldetails"></div>
+        <div class="travels">
+          <div class="type-of-travel">
+            <button class="public-tours" name="tpt">
+              <i class="bx bx-globe"></i> Public Tours
+            </button>
+            <button class="private-tours" name="tpt">
+              <i class="bx bx-group"></i> Private Tours
+            </button>
+          </div>
+          <div class="travel-details">
+            <div class="no-of-ppl">
+              <p class="booking-p"><i class="bx bx-group"></i> No of People</p>
+              <select name="no-of-ppl" id="no-of-ppl">
+                <option value="~~">Choose Number</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="3+">3+</option>
+              </select>
+            </div>
+            <div class="what-date">
+              <p class="booking-p"><i class="bx bx-calendar"></i> Date</p>
+              <input type="Date" />
+            </div>
+            <div class="what-transport">
+              <p class="booking-p"><i class="bx bx-time"></i> Time</p>
+              <input type="time" />
+            </div>
+            <div class="tour">
+              <p class="booking-p"><i class="bx bxs-flag"></i> Tour</p>
+              <select name="tour" id="tour">
+                <option value="~~">Select Tour</option>
+                <option value="1">Type - 1</option>
+                <option value="2">Type - 2</option>
+                <option value="3">Type - 3</option>
+              </select>
+            </div>
+            <div class="Transportation">
+              <p class="booking-p"><i class="bx bxs-car"></i> Transportation</p>
+              <select name="Transportation" id="Transportation">
+                <option value="~~">Select Transportation</option>
+                <option value="1">Bike</option>
+                <option value="2">Car</option>
+                <option value="3">Bus</option>
+              </select>
+            </div>
+            <div class="submit-button">
+              <button><i class="bx bx-search"></i></button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -78,13 +138,13 @@
 
         <!--Left-Right Buttons-->
         <div class="button-div">
-          <button class="btn">&lt;</button>
-          <button class="btn">&gt;</button>
+          <button class="pre-btn" id="dest-next-btn">&lt;</button>
+          <button class="nxt-btn" id="dest-prev-btn">&gt;</button>
         </div>
       </div>
       <!-- Cards  -->
       <div class="popular-destination">
-        <div class="destination-1">
+        <div class="destination">
           <img
             src="Resources/popular_dest_1.svg"
             class="popular-destination-pics"
@@ -104,7 +164,7 @@
           </p>
         </div>
 
-        <div class="destination-2">
+        <div class="destination">
           <img
             src="Resources/popular_dest_2.svg"
             class="popular-destination-pics"
@@ -123,7 +183,7 @@
           </p>
         </div>
 
-        <div class="destination-3">
+        <div class="destination">
           <img
             src="Resources/popular_dest_3.svg"
             class="popular-destination-pics"
@@ -141,7 +201,83 @@
           </p>
         </div>
 
-        <div class="destination-4">
+        <div class="destination">
+          <img
+            src="Resources/popular_dest_4.svg"
+            class="popular-destination-pics"
+          />
+          <h3>Siena and Surroundings</h3>
+
+          <pre class="pricing">from <b class = "euros">  34 €</b></pre>
+
+          <div class="day-align">
+            <pre><i class="uil uil-calendar-alt"></i>TO BE DECIEDED   <i class="uil uil-users-alt"></i>5-10 PP</pre>
+          </div>
+
+          <p class="popular-destination-name">
+            Visit the beautiful Siena and the cities that surround it to
+            experiance ...
+          </p>
+        </div>
+
+        <div class="destination">
+          <img
+            src="Resources/popular_dest_1.svg"
+            class="popular-destination-pics"
+          />
+
+          <h3>Lucca Bike Tour</h3>
+
+          <pre class="pricing">from   <b class = "euros">34 €</b></pre>
+
+          <div class="day-align">
+            <pre><i class="uil uil-calendar-alt"></i> EVERYDAY            <i class="uil uil-users-alt"></i>3-10 PP</pre>
+          </div>
+
+          <p class="popular-destination-name">
+            A tour of the city and its surroundings led by a professional guide
+            ...
+          </p>
+        </div>
+
+        <div class="destination">
+          <img
+            src="Resources/popular_dest_2.svg"
+            class="popular-destination-pics"
+          />
+          <h3>Wine tasting in Tuscany</h3>
+
+          <pre class="pricing">from <b class = "euros">  34 €</b></pre>
+
+          <div class="day-align">
+            <pre><i class="uil uil-calendar-alt"></i> MONDAY                 <i class="uil uil-users-alt"></i>10-30 PP</pre>
+          </div>
+
+          <p class="popular-destination-name">
+            The real magic is here where you can enjoy the best Tuscan wine and
+            eat...
+          </p>
+        </div>
+
+        <div class="destination">
+          <img
+            src="Resources/popular_dest_3.svg"
+            class="popular-destination-pics"
+          />
+          <h3>Cinque Terre Tour</h3>
+
+          <pre class="pricing">from <b class = "euros">  34 €</b></pre>
+
+          <div class="day-align">
+            <pre><i class="uil uil-calendar-alt"></i>TO BE DECIEDED   <i class="uil uil-users-alt"></i>10-50 PP</pre>
+          </div>
+
+          <p class="popular-destination-name">
+            Visiting the 5 Terre is must, and you can never go there enough ...
+          </p>
+        </div>
+
+        <div class="destination">
           <img
             src="Resources/popular_dest_4.svg"
             class="popular-destination-pics"
@@ -407,14 +543,14 @@
 
         <!--Left-Right Buttons-->
         <div>
-          <button class="btn">&lt;</button>
-          <button class="btn">&gt;</button>
+          <button class="pre-btn" id="happy-cus-prev-btn">&lt;</button>
+          <button class="nxt-btn" id="happy-cus-next-btn">&gt;</button>
         </div>
       </div>
 
       <div class="happy-reviews">
-        <div class="review-1">
-          <div class="happy-review-pic-1">
+        <div class="review">
+          <div class="happy-review-pic">
             <img src="Resources/happy-customer.png" alt="happy-customer" />
             <p>Lyod Gomez</p>
           </div>
@@ -428,8 +564,37 @@
           </p>
         </div>
 
-        <div class="review-2">
-          <div class="happy-review-pic-2">
+        <div class="review">
+          <div class="happy-review-pic">
+            <img src="Resources/happy-customer.png" alt="happy-customer" />
+            <p>Lyod Gomez</p>
+          </div>
+
+          <p>
+            But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and i will give you a cmplete
+            account of the system, and expound the actual teachings of the great
+            explorer of the truth, the master-builder of human happiness. No one
+            rejects, dislikes, or avoids pleasure itself, because it is pleasure
+          </p>
+        </div>
+        <div class="review">
+          <div class="happy-review-pic">
+            <img src="Resources/happy-customer.png" alt="happy-customer" />
+            <p>Lyod Gomez</p>
+          </div>
+
+          <p>
+            But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and i will give you a cmplete
+            account of the system, and expound the actual teachings of the great
+            explorer of the truth, the master-builder of human happiness. No one
+            rejects, dislikes, or avoids pleasure itself, because it is pleasure
+          </p>
+        </div>
+
+        <div class="review">
+          <div class="happy-review-pic">
             <img src="Resources/happy-customer.png" alt="happy-customer" />
             <p>Lyod Gomez</p>
           </div>
@@ -506,5 +671,7 @@
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
